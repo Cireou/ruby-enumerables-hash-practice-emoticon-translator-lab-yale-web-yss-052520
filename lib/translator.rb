@@ -7,9 +7,7 @@ def load_library
     file[des] = {}
     file[des][:english] = faces[0]
     file[des][:japanese] = faces[1]
-    binding.pry
   end 
-  binding.pry
 end
 
 def get_japanese_emoticon
@@ -19,5 +17,3 @@ end
 def get_english_meaning(emote_file, emote)
   # code goes here
 end
-
-binding.pry
