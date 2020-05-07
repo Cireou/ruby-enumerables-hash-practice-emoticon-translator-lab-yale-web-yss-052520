@@ -15,7 +15,7 @@ def get_japanese_emoticon(path, emote)
   hash.each do |des, lang_hash|
     return hash[des][:japanese] if hash[des][:english] == emote
   end 
-  puts "Sorry, that emoticon was not found"
+  return "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning(path, emote)
@@ -23,5 +23,5 @@ def get_english_meaning(path, emote)
   hash.each do |des, lang_hash| 
     return des if lang_hash[:japanese] == emote
   end 
-  puts "Sorry, that emoticon was not found"
+  return "Sorry, that emoticon was not found"
 end
