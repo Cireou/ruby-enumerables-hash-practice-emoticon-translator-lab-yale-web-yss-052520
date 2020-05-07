@@ -11,10 +11,13 @@ def load_library(path)
 end
 
 def get_japanese_emoticon(path, emote)
-  hash = load_library(path)
-  hash.each do |des
+  # hash = load_library(path)
+  nil
 end
 
 def get_english_meaning(path, emote)
   hash = load_library(path)
+  hash.each do |des, lang_hash| 
+    return des if lang_hash[:japanese] == emote
+  end 
 end
