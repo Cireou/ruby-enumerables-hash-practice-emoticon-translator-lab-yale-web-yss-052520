@@ -10,10 +10,10 @@ def load_library
   end 
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(emote_file, emote)
+  nil
 end
 
 def get_english_meaning(emote_file, emote)
-  # code goes here
+  nil
 end
