@@ -4,7 +4,7 @@ require "yaml"
 def load_library
   file = YAML.load_file("./lib/emoticons.yml")
   binding.pry
-  file.every do |des,faces| 
+  file.each do |des,faces| 
     file[des] = {}
     file[des][:english] = faces[0]
     file[des][:japanese] = faces[1]
