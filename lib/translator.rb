@@ -6,7 +6,9 @@ def load_library
   binding.pry
   file.every do |des,faces| 
     file[des] = {}
-    file[des][:
+    file[des][:english] = faces[0]
+    file[des][:japanese] = faces[1]
+    binding.pry
   end 
 end
 
