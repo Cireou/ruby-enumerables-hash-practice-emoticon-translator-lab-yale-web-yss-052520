@@ -10,10 +10,11 @@ def load_library(path)
   end 
 end
 
-def get_japanese_emoticon(emote_file, emote)
-  nil
+def get_japanese_emoticon(path, emote)
+  hash = load_library(path)
+  hash.each do |des
 end
 
-def get_english_meaning(emote_file, emote)
-  nil
+def get_english_meaning(path, emote)
+  hash = load_library(path)
 end
