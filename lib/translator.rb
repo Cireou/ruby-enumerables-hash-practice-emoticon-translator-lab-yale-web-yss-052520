@@ -4,7 +4,10 @@ require "yaml"
 def load_library
   file = YAML.load_file("./lib/emoticons.yml")
   binding.pry
-  file.
+  file.every do |des,faces| 
+    file[des] = {}
+    file[des][:
+  end 
 end
 
 def get_japanese_emoticon
